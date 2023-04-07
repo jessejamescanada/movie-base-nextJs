@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { AiFillStar } from 'react-icons/ai'
 import { RiMovie2Line } from 'react-icons/ri'
+import WatchLater from '../../../components/WatchLater'
 
 const fetchMovie = async (slug) => {
   const res = await fetch(
@@ -13,6 +14,7 @@ const fetchMovie = async (slug) => {
 
 async function MovieDisplay({ params: { slug } }) {
   const movie = await fetchMovie(slug)
+  // console.log(movie)
 
   return (
     <div className='w-full '>
@@ -53,6 +55,9 @@ async function MovieDisplay({ params: { slug } }) {
             Rating: {movie.vote_average}{' '}
             <AiFillStar className='text-red-600 ml-1' />
           </p>
+          <div>
+            <WatchLater movie={movie} />
+          </div>
 
           <div className='flex flex-col'>
             <h3 className='text-center text-2xl mt-4'>Similar Movies</h3>
