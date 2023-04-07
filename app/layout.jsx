@@ -12,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
-      <body className='bg-gray-900 text-white max-w-7xl mx-auto overflow-hidden'>
+      <body className='bg-gray-900 text-white max-w-7xl mx-auto overflow-hidden '>
         <ClerkProvider>
           <Providers>
             <Header />

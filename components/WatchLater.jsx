@@ -56,9 +56,10 @@ const WatchLater = ({ movie }) => {
 
   const deleteFav = () => {
     if (user === null) {
-      return
+      setUserExists(false)
     } else {
       deleteMovie.mutate(movie)
+      setUserExists(true)
     }
   }
   const toggleButton = () => {

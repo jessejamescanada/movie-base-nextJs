@@ -91,13 +91,13 @@ async function MovieDisplay({ params: { slug } }) {
 
 export default MovieDisplay
 
-export async function generateStaticParams() {
-  const res = await fetch(
-    `https://api.themoviedb.org/3/movie/popular?api_key=${process.env.MOVIE_API}&page=1`
-  )
-  const data = await res.json()
+// export async function generateStaticParams() {
+//   const res = await fetch(
+//     `https://api.themoviedb.org/3/movie/popular?api_key=${process.env.MOVIE_API}&page=1`
+//   )
+//   const data = await res.json()
 
-  return data.results.map((movie) => ({
-    slug: movie.id.toString(),
-  }))
-}
+//   return data.results.map((movie) => ({
+//     slug: movie.id.toString(),
+//   }))
+// }
