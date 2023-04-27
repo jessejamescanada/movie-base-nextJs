@@ -20,7 +20,7 @@ async function SearchResults({ params: { slug } }) {
         ''
       ) : (
         <h1 className='text-center w-full text-3xl capitalize'>
-          Search results for {slug}
+          Search results for {decodeURI(slug)}
         </h1>
       )}
 
