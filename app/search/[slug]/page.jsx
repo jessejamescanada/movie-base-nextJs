@@ -41,7 +41,7 @@ async function SearchResults({ params: { slug } }) {
                     width={200}
                     height={200}
                     alt={movie.title}
-                    className='rounded-md shadow-[0_0_5px_1px_rgba(255,255,255,1)] lg:w-[200px]'
+                    className='rounded-md shadow-[0_0_5px_1px_rgba(255,255,255,1)] lg:w-[200px] lg:h-[300px]'
                   />
                 </div>
               </Link>
