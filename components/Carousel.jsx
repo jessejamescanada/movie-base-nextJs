@@ -44,7 +44,7 @@ export const EmblaCarousel = ({ trending }) => {
                   width={300}
                   height={300}
                   alt={movie.title}
-                  className='rounded-lg h-auto w-[200px] lg:h-[335px] lg:w-[300px] mx-auto my-2 shadow-[0_0_5px_1px_rgba(255,255,255,1)]'
+                  className='rounded-lg h-[300px] w-[200px] lg:h-[335px] lg:w-[300px] mx-auto my-2 shadow-[0_0_5px_1px_rgba(255,255,255,1)]'
                 />
               </Link>
             </div>
